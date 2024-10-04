@@ -59,13 +59,13 @@ if st.button('Predict'):
     # Generate advice based on prediction results    
     if prediction_prob >=0.38:        
         advice = (            f'According to our model, CHB children with a predicted probability greater than 38% have a high risk of significant liver fibrosis. '            
-                              f'The model predicts that the probability of having heart significant liver fibrosis is {prediction_prob * 100:.2f}%. '           
+                              f'The model predicts that the probability of having significant liver fibrosis is {prediction_prob * 100:.2f}%. '           
                               'While this is just an estimate, it suggests that this patient may be at significant risk. '           
                               'I recommend that this patient undergo a liver biopsy as soon as possible for further evaluation and '         
                               'to ensure accurate diagnosis and necessary treatment.'        )    
     else:        
         advice = (            f'According to our model, CHB children with a predicted probability greater than 38% have a high risk of significant liver fibrosis. '       
-                              f'The model predicts that your probability of not having heart disease is {prediction_prob * 100:.2f}%. '           
+                              f'The model predicts that your probability of having significant liver fibrosis is {prediction_prob * 100:.2f}%. '           
                               'However, maintaining a healthy lifestyle is still very important.'            
                               'I recommend regular check-ups to monitor your liver health, '            
                               'and to seek medical advice promptly if you experience any symptoms.'        )
